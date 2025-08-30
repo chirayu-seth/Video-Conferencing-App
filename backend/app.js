@@ -21,8 +21,7 @@ const PORT=process.env.PORT|| 8000;
 app.use(cors({
   origin: "https://video-conferencing-app-frontend-bnw7.onrender.com",
   credentials: true,
-  methods:["GET", "POST", "DELETE", "OPTIONS"],
-  allowedHeaders:["Content-Type", "Authorization"]
+
 }));
 
 app.use(cookieParser());

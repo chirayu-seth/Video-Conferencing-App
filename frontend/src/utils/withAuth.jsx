@@ -9,7 +9,7 @@ export default function withAuth(Component) {
     useEffect(() => {
       const verifyUser = async () => {
         try {
-          const res = await axios.get("http://localhost:8000/api/v1/users/verify", {
+          const res = await axios.get("https://video-conferencing-app-backend-2ror.onrender.com/api/v1/users/verify", {
             withCredentials: true,
           });
           setAuthenticated(res.data.status);

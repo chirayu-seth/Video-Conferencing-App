@@ -3,7 +3,7 @@
 A real-time video conferencing web application built with React, Node.js, Express, Socket.IO, and WebRTC.
 This project allows users to create and join video meetings and chat during calls.
 
-#🚀 Features
+🚀 #Features
 
 📹 Real-time Video & Audio Conferencing using WebRTC
 
@@ -15,7 +15,7 @@ This project allows users to create and join video meetings and chat during call
 
 ⚡ Low-latency communication via Socket.IO
 
-#🛠️ Tech Stack
+🛠️ #Tech Stack
 
 Frontend: React, Vite, Material UI
 Backend: Node.js, Express.js

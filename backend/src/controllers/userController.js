@@ -24,8 +24,8 @@ const login = async(req,res,next)=>{
     const token = createSecretToken(existingUser._id);
          res.cookie("token", token, {
           httpOnly: true,
-        secure: false,  
-         sameSite: "lax",
+        secure: true,  
+         sameSite: "",
          
          maxAge:3 * 24 * 60 * 60 * 1000
     });
@@ -58,8 +58,8 @@ const register=async(req,res,next)=>{
         const token = createSecretToken(newUser._id);
          res.cookie("token", token, {
          httpOnly: true,
-          secure: false, 
-            sameSite: "lax",
+          secure: true, 
+            sameSite: "",
          maxAge:3 * 24 * 60 * 60 * 1000
     });
     res.status(httpstatus.CREATED).json({message:"User Registerd", success:true, user: newUser});

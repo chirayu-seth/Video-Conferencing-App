@@ -60,7 +60,7 @@ function HomeComponent() {
             <div className="meetContainer">
                 <div className="leftPanel">
                     <div>
-                       
+                            
 
                         <div style={{ display: 'flex', gap: "10px" }}>
 

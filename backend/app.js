@@ -14,10 +14,23 @@ const server=createServer(app);
 const io= connectToSocket(server)
 const PORT=process.env.PORT|| 8000;
 
+
+const allowedOrigins = [
+  "http://localhost:5173", 
+  "https://video-conferencing-app-frontend-bnw7.onrender.com"
+];
+
 app.use(cors({
-    origin:"*",
-    credentials: true
-    
+  origin: function(origin, callback) {
+    if (!origin) return callback(null, true); // allow Postman/server
+    if (allowedOrigins.indexOf(origin) === -1) {
+      return callback(new Error("CORS not allowed"), false);
+    }
+    return callback(null, true);
+  },
+  methods: ["GET","POST","PUT","DELETE","OPTIONS"],
+  allowedHeaders: ["Content-Type","Authorization"],
+  credentials: true
 }));
 app.use(cookieParser());
 app.use(express.json({limit:"40kb"}))

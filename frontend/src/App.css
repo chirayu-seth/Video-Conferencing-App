@@ -1,0 +1,150 @@
+/* landing page css */
+
+.landingPageContainer{
+  width: 100vw;
+  height: 100vh;
+  background: url("/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
+ 
+}
+
+.landingPageContainer nav{
+  padding-inline: 1.2rem;
+  padding-block: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.landingPageContainer nav h2{
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.landingPageContainer nav .navlist{
+  display: flex;
+  gap: 1.6rem;
+  cursor: pointer;
+}
+.landingMainContainer{
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 3rem;
+  height: 80vh;
+  align-items: center;
+}
+.landingMainContainer > div:nth-child(1){
+  font-size: 2rem;
+}
+.landingMainContainer > div:nth-child(1) div[role="button"]{
+  background-color: orange;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-top: 1.9rem;
+  
+}
+.landingMainContainer > div:nth-child(1) div[role="button"] a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+}
+.landingMainContainer > div:nth-child(2) img{
+height: 70vh;
+width: auto;
+}
+
+/* Authentication css */
+
+.MainContainer{
+  display: flex;
+  height: 100vh;
+  text-align: center;
+  
+  
+  
+}
+.LeftContainer{
+background-image: url("/image.jpg");
+ background-size: cover;
+  width: 60%;
+ 
+}
+.RightContainer{
+  background-color: rgb(255, 255, 255);
+  width: 40%;
+  margin-top: 3rem;
+ 
+}
+.RightContainer p{
+  font-size: large;
+}
+
+.MuiTextField-root {
+
+  width: 28rem; 
+}
+
+.RightContainer .textfield{
+  
+  display: flex;         
+  flex-direction: column; 
+  gap: 1.5rem;              
+  margin-top: 1rem;
+  align-items: center; 
+}
+
+
+ .RightContainer button{
+  margin-top: 1rem;
+ }
+ .lock{
+  font-size: x-large;
+ }
+ .btn{
+  width: 27.5rem;
+ }
+
+
+
+
+
+ 
+
+ .navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  text-align: center;
+
+}
+.meetContainer {
+  display: flex;
+  padding-inline: 20px;
+  height: 80vh;
+  gap: 10vw;
+  justify-content: center;
+}
+
+
+
+.leftPanel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+.rightPanel {
+  display: flex;
+  align-items: center;
+}
+
+.rightPanel > img {
+  width: 30vw;
+  height: auto;
+  border-radius: 20px;
+}

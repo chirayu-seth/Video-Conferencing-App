@@ -14,14 +14,16 @@ const server=createServer(app);
 const io= connectToSocket(server)
 const PORT=process.env.PORT|| 8000;
 
-const corsOptions = {
+
+
+
+
+app.use(cors({
   origin: "https://video-conferencing-app-frontend-bnw7.onrender.com",
-  credentials: true, // allow cookies
-};
-
-
-
-app.use(cors(corsOptions));
+  credentials: true,
+  methods:["GET", "POST", "DELETE", "OPTIONS"],
+  allowedHeaders:["Content-Type", "Authorization"]
+}));
 
 app.use(cookieParser());
 app.use(express.json({limit:"40kb"}))
